@@ -55,7 +55,7 @@
 
 ---
 
-# Graphic card driver
+# Graphic card driver [[**reference**]](http://optic.tistory.com/119)
 
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -66,11 +66,11 @@ sudo reboot
 ```
 sudo nvidia-settings
 ```
-[[**reference**]](http://optic.tistory.com/119)
+
 
 ---
 
-# Language setting 
+# Language setting [[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
 ## **(Korean only)**
 
 - Settings
@@ -86,7 +86,7 @@ sudo nvidia-settings
 - Hangul toggle key
   - Add Hangul
 
-[[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
+
 
 ---
 
@@ -95,9 +95,9 @@ sudo nvidia-settings
 
 
 
-# Pytorch
+# Pytorch [[**reference**]](https://pytorch.org/)
 
-[[**reference**]](https://pytorch.org/)
+
 
 # Other programs
 
@@ -120,14 +120,14 @@ Visualize gpu situation
 
 
 
-# Cuda and cudnn
+# Cuda and cudnn [[**reference**]](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
 
 Install CUDA 9.0
 
-https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138
 
-# Tensorflow
 
-https://www.tensorflow.org/install/install_linux#InstallingAnaconda
+# Tensorflow [[**reference**]](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
+
+
 
 
