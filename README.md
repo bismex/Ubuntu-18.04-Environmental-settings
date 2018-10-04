@@ -21,7 +21,7 @@
 - Download ubuntu 18.04 [[**Link**]](https://www.ubuntu.com/download/desktop)
 - Prepare USB
 - Create booting disk [[**Link(Korean)**]](http://crescentupon.tistory.com/383)
-- Turn off *Windows Quick Start [[**Link(Korean)**]](https://prolite.tistory.com/1253)
+- Turn off *Windows Quick Start* [[**Link(Korean)**]](https://prolite.tistory.com/1253)
 - BIOS
   - Boot Ubuntu USB
 - Install Ubuntu
