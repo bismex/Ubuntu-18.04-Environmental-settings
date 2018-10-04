@@ -8,10 +8,10 @@
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting)
 - [Adaconda](#adaconda)
+- [Cuda and cudnn](#cuda-and-cudnn)
 - [Pytorch](#pytorch)
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
-- [Cuda and cudnn](#cuda-and-cudnn)
 - [Tensorflow](#tensorflow)
 
 ---
@@ -94,10 +94,55 @@ sudo nvidia-settings
 ---
 
 # Adaconda
+## Version : Python 3.7 version (64bit) 
+## [[**reference**]](https://www.anaconda.com/download/#linux)
+
+```
+cd
+cd Downloads/
+bash Anaconda3-5.3.0-Linux-x86_64.sh
+```
+- License agreement
+- Confirm install location
+- /root/.bachrc? [yes]
+- VSCode? [No]
+
+(after reboot)
+
+```
+conda --version
+conda create -n new_name python=3.6
+conda activate pytorch36
+conda deactivate
+```
 
 
+# CUDA
+## Version 9.0
+## [[**reference**]](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
 
+- Install CUDA 9.0 [[**Link**]](https://developer.nvidia.com/cuda-90-download-archive)
+  - Linux / x86_64 / Ubuntu / 17.04 (18.04 is not supported) / runfile (local)
+  - Base Installer (Download 1.6GB)
+  
+```
+cd
+cd Downloads/
+sudo chmod +x cuda_9.0.176_384.81_linux.run
+./cuda_9.0.176_384.81_linux.run --override
+```
 
+- EULA? [accept]
+- Unsupported configuration? [yes]
+- Graphic driver? [no]
+- Cuda toolkit? [yes]
+- run with 'sudo'? [yes]
+- Confirm toolkit location
+- symbolic link? [yes]
+- Cuda samples? [yes]
+- Confirm sample location
+
+# CUDNN
 
 # Pytorch 
 ## [[**reference**]](https://pytorch.org/)
@@ -125,11 +170,6 @@ Visualize gpu situation
 
 
 
-# Cuda and cudnn 
-## Version 9.0
-## [[**reference**]](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
-
-Install CUDA 9.0
 
 
 
