@@ -144,6 +144,19 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - Confirm sample location
 
 # CUDNN
+## Version 7.0.5
+## [[**reference**]](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
+
+- Download this [**“cuDNN v7.0.5 Library for Linux”**](https://developer.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/9.0_20171129/cudnn-9.0-linux-x64-v7)
+- Unpack the archive and move it the contents into the directory where you install CUDA 9.0
+
+```
+tar -zxvf cudnn-9.0-linux-x64-v7.tgz # unpack
+
+```
+
+
+
 
 # Pytorch 
 ## [[**reference**]](https://pytorch.org/)
