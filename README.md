@@ -22,7 +22,7 @@ sudo nvidia-settings
 
 http://optic.tistory.com/119
 
-### Language (optional)
+### Language setting (Korean only)
 
 http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/
 
