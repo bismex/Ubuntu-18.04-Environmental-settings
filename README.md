@@ -3,6 +3,15 @@
 
 # Table of Contents
 - [Network connection](###Network-connection)
+- [Software updater](###Software-updater)
+- [Graphic card driver](###Graphic-card-driver)
+- [Language setting (Korean only)](###Language-setting-(Korean-only))
+- [Adaconda](###Adaconda)
+- [Pytorch](###Pytorch)
+- [Other programs](###Other-programs)
+- [Useful command](###Useful-command)
+- [Cuda and cudnn](###Cuda-and-cudnn)
+- [Tensorflow](###Tensorflow)
 
 
 
@@ -23,7 +32,7 @@
 
 ---
 
-### Graphic card
+### Graphic card driver
 
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -57,16 +66,16 @@ sudo nvidia-settings
 
 ---
 
-### Adaconda install
+### Adaconda
 
 
 
 
-### pytorch install
+### Pytorch
 
 [[**reference**]](https://pytorch.org/)
 
-### other programs
+### Other programs
 
 ```
 pip install scipy
@@ -87,13 +96,13 @@ Visualize gpu situation
 
 
 
-### cuda and cudnn
+### Cuda and cudnn
 
 Install CUDA 9.0
 
 https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138
 
-### tensorflow install
+### Tensorflow
 
 https://www.tensorflow.org/install/install_linux#InstallingAnaconda
 
