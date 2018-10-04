@@ -1,7 +1,8 @@
 # Ubuntu 18.04 Environmental settings
 
 
-# Table of Contents
+## Table of Contents
+- [Ubuntu 18.04 installation](###Ubuntu-18.04-installation)
 - [Network connection](###Network-connection)
 - [Software updater](###Software-updater)
 - [Graphic card driver](###Graphic-card-driver)
@@ -13,7 +14,29 @@
 - [Cuda and cudnn](###Cuda-and-cudnn)
 - [Tensorflow](###Tensorflow)
 
+---
 
+### Ubuntu 18.04 installation
+
+- Download ubuntu 18.04 [[**Link**]](https://www.ubuntu.com/download/desktop)
+- Prepare USB
+- Create booting disk [[**Link(Korean)**]](http://crescentupon.tistory.com/383)
+- Turn off *Windows Quick Start [[**Link(Korean)**]](https://prolite.tistory.com/1253)
+- BIOS
+  - Boot Ubuntu USB
+- Install Ubuntu
+  - Welcome : English
+  - Keyboard layout : ENG(US)
+  - Updates and other software : Normal installation / Download updates while installing Ubuntu
+  - Installation type : something else 
+    - I installed it on the remaining hard disk.
+    - And, I partitioned it into partition swap and ext4. [[**Link**]](https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation)
+  - Where are you : seoul
+  - Who are you : write your information
+
+[[**reference**]](http://vire.tistory.com/25?category=678504)
+
+---
 
 ### Network connection
 
