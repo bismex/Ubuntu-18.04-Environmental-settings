@@ -16,7 +16,7 @@ sudo ubuntu-drivers autoinstall
 
 sudo reboot
 
-(재부팅 후)
+(after reboot)
 
 sudo nvidia-settings
 
