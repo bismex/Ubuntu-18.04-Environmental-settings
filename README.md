@@ -2,18 +2,26 @@
 
 
 ## Table of Contents
+
+**Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
 - [Network connection](#network-connection)
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting)
-- [Adaconda](#adaconda)
+
+**Tensorflow**
 - [CUDA](#cuda)
 - [CUDNN](#cudnn)
+- [Tensorflow](#tensorflow)
+  
+**Pytorch**
+- [Adaconda](#adaconda)
 - [Pytorch](#pytorch)
+  
+**ETC**
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
-- [Tensorflow](#tensorflow)
 
 ---
 
@@ -94,30 +102,6 @@ sudo nvidia-settings
 
 ---
 
-# Adaconda
-## Version : Python 3.7 version (64bit) 
-## [[**reference**]](https://www.anaconda.com/download/#linux)
-
-```
-cd
-cd Downloads/
-bash Anaconda3-5.3.0-Linux-x86_64.sh
-```
-- License agreement
-- Confirm install location
-- /root/.bachrc? [yes]
-- VSCode? [No]
-
-(after reboot)
-
-```
-conda --version
-conda create -n new_name python=3.6
-conda activate pytorch36
-conda deactivate
-```
-
-
 # CUDA
 ## Version 9.0
 ## [[**reference**]](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
@@ -142,6 +126,8 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - symbolic link? [yes]
 - Cuda samples? [yes]
 - Confirm sample location
+
+---
 
 # CUDNN
 ## Version 7.0.5
@@ -172,11 +158,44 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 
 - Restart !
 
+---
+
+# Tensorflow 
+## [[**reference**]](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
+
+---
+
+# Adaconda
+## Version : Python 3.7 version (64bit) 
+## [[**reference**]](https://www.anaconda.com/download/#linux)
+
+```
+cd
+cd Downloads/
+bash Anaconda3-5.3.0-Linux-x86_64.sh
+```
+- License agreement
+- Confirm install location
+- /root/.bachrc? [yes]
+- VSCode? [No]
+
+(after reboot)
+
+```
+conda --version
+conda create -n new_name python=3.6
+conda activate pytorch36
+conda deactivate
+```
+
+---
 
 # Pytorch 
 ## [[**reference**]](https://pytorch.org/)
 
 
+
+---
 
 # Other programs
 
@@ -189,6 +208,8 @@ pip install pillow
 pip install numpy
 ```
 
+---
+
 # Useful command
 
 
@@ -199,11 +220,6 @@ Visualize gpu situation
 
 
 
-
-
-
-# Tensorflow 
-## [[**reference**]](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
 
 
 
