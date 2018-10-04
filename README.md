@@ -151,10 +151,16 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - Unpack the archive and move it the contents into the directory where you install CUDA 9.0
 
 ```
-tar -zxvf cudnn-9.0-linux-x64-v7.tgz # unpack
-
+# Unpack the archive
+tar -zxvf cudnn-9.0-linux-x64-v7.tgz
+# Move the unpacked contents to your CUDA directory
+sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda-9.0/lib64/
+sudo cp  cuda/include/cudnn.h /usr/local/cuda-9.0/include/
+# Give read access to all users
+sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
-
+- Install libcupti
+`sudo apt-get install libcupti-dev`
 
 
 
