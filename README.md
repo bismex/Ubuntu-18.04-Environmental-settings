@@ -30,7 +30,7 @@
   - Updates and other software : Normal installation / Download updates while installing Ubuntu
   - Installation type : something else 
     - I installed it on the remaining hard disk.
-    - And, I partitioned it into partition swap and ext4. [[**Link**]](https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation)
+    - And, I partitioned it into 'partition swap' and 'ext4'. [[**Link**]](https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation)
   - Where are you : seoul
   - Who are you : write your information
 
