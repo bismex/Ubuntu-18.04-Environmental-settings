@@ -8,10 +8,14 @@
 - IPv4
   - Input (Address, Netmask, Gateway, DNS)
 
+---
+
 ### Software updater
 
 - Searching window
 - software update
+
+---
 
 ### Graphic card
 
@@ -25,6 +29,8 @@ sudo reboot
 sudo nvidia-settings
 ```
 [[**reference**]](http://optic.tistory.com/119)
+
+---
 
 ### Language setting (Korean only)
 
@@ -43,7 +49,10 @@ sudo nvidia-settings
 
 [[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
 
+---
+
 ### Adaconda install
+
 
 
 
