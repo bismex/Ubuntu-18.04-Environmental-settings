@@ -2,7 +2,7 @@
 
 
 ## Table of Contents
-- [Ubuntu 18.04 installation](###Ubuntu-18.04-installation)
+- [Ubuntu 18.04 installation](#Ubuntu-18.04-installation)
 - [Network connection](###Network-connection)
 - [Software updater](###Software-updater)
 - [Graphic card driver](###Graphic-card-driver)
@@ -16,7 +16,7 @@
 
 ---
 
-### Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
+# Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
 
 - Download ubuntu 18.04 [[**Link**]](https://www.ubuntu.com/download/desktop)
 - Prepare USB
