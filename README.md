@@ -8,7 +8,7 @@
 - [Graphic card driver](###Graphic-card-driver)
 - [Language setting (Korean only)](###Language-setting-(Korean-only))
 - [Adaconda](###Adaconda)
-- [Pytorch](#pytorch)
+- [Pytorch](###pytorch)
 - [Other programs](###Other-programs)
 - [Useful command](###Useful-command)
 - [Cuda and cudnn](###Cuda-and-cudnn)
@@ -93,7 +93,7 @@ sudo nvidia-settings
 
 
 
-# Pytorch
+### Pytorch
 
 [[**reference**]](https://pytorch.org/)
 
