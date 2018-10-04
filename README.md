@@ -2,7 +2,7 @@
 
 
 ## Table of Contents
-- [Ubuntu 18.04 installation](#Ubuntu-18.04-installation)
+- [Ubuntu 18.04 installation](###ubuntu-18.04-installation)
 - [Network connection](###Network-connection)
 - [Software updater](###Software-updater)
 - [Graphic card driver](###Graphic-card-driver)
