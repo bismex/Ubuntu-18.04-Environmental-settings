@@ -160,8 +160,17 @@ sudo cp  cuda/include/cudnn.h /usr/local/cuda-9.0/include/
 sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudnn*
 ```
 - Install libcupti
+
 `sudo apt-get install libcupti-dev`
 
+- Do the CUDA post-install actions
+
+```
+export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+```
+
+- Restart !
 
 
 # Pytorch 
