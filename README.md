@@ -16,7 +16,7 @@
 
 ---
 
-# Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
+### Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
 
 - Download ubuntu 18.04 [[**Link**]](https://www.ubuntu.com/download/desktop)
 - Prepare USB
