@@ -2,11 +2,16 @@
 
 ### Network connection
 
-Option -> Network -> Wired option -> IPv4 -> input (Address, Netmask, Gateway, DNS)
+- Settings
+- Network
+- Wired option
+- IPv4
+  - Input (Address, Netmask, Gateway, DNS)
 
 ### Software updater
 
-Search -> software update
+- Searching window
+- software update
 
 ### Graphic card
 
@@ -23,6 +28,15 @@ sudo nvidia-settings
 
 ### Language setting (Korean only)
 
+- Settings
+- Region & Language
+- Input sources
+  - Delete English
+  - Add Korean(Hangul)
+  - Click Korean(Hangul)
+- Option
+- Hangul toggle key
+    Add Hangul
 
 
 [[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
