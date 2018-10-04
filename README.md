@@ -2,21 +2,21 @@
 
 
 ## Table of Contents
-- [Ubuntu 18.04 installation](###ubuntu-18.04-installation)
-- [Network connection](###Network-connection)
-- [Software updater](###Software-updater)
-- [Graphic card driver](###Graphic-card-driver)
-- [Language setting (Korean only)](###Language-setting-(Korean-only))
-- [Adaconda](###Adaconda)
-- [Pytorch](###pytorch)
-- [Other programs](###Other-programs)
-- [Useful command](###Useful-command)
-- [Cuda and cudnn](###Cuda-and-cudnn)
-- [Tensorflow](###Tensorflow)
+- [Ubuntu 18.04 installation](#ubuntu-18.04-installation)
+- [Network connection](#network-connection)
+- [Software updater](#software-updater)
+- [Graphic card driver](#graphic-card-driver)
+- [Language setting (Korean only)](#language-setting-(Korean-only))
+- [Adaconda](#adaconda)
+- [Pytorch](#pytorch)
+- [Other programs](#other-programs)
+- [Useful command](#useful-command)
+- [Cuda and cudnn](#cuda-and-cudnn)
+- [Tensorflow](#tensorflow)
 
 ---
 
-### Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
+# Ubuntu 18.04 installation [[**reference**]](http://vire.tistory.com/25?category=678504)
 
 - Download ubuntu 18.04 [[**Link**]](https://www.ubuntu.com/download/desktop)
 - Prepare USB
@@ -37,7 +37,7 @@
 
 ---
 
-### Network connection
+# Network connection
 
 - Settings
 - Network
@@ -47,14 +47,14 @@
 
 ---
 
-### Software updater
+# Software updater
 
 - Searching window
 - software update
 
 ---
 
-### Graphic card driver
+# Graphic card driver
 
 ```
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -69,7 +69,7 @@ sudo nvidia-settings
 
 ---
 
-### Language setting (Korean only)
+# Language setting (Korean only)
 
 - Settings
 - Region & Language
@@ -88,16 +88,16 @@ sudo nvidia-settings
 
 ---
 
-### Adaconda
+# Adaconda
 
 
 
 
-### Pytorch
+# Pytorch
 
 [[**reference**]](https://pytorch.org/)
 
-### Other programs
+# Other programs
 
 ```
 pip install scipy
@@ -108,7 +108,7 @@ pip install pillow
 pip install numpy
 ```
 
-### Useful command
+# Useful command
 
 
 ```
@@ -118,13 +118,13 @@ Visualize gpu situation
 
 
 
-### Cuda and cudnn
+# Cuda and cudnn
 
 Install CUDA 9.0
 
 https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138
 
-### Tensorflow
+# Tensorflow
 
 https://www.tensorflow.org/install/install_linux#InstallingAnaconda
 
