@@ -10,23 +10,55 @@ Search -> software update
 
 ### Graphic card
 
+```
 sudo add-apt-repository ppa:graphics-drivers/ppa
-
 sudo ubuntu-drivers autoinstall
-
 sudo reboot
-
+```
 (after reboot)
-
+```
 sudo nvidia-settings
-
-http://optic.tistory.com/119
+```
+[[**reference**]](http://optic.tistory.com/119)
 
 ### Language setting (Korean only)
 
-http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/
+
+
+[[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
+
+### Adaconda install
+
+
+
+### pytorch install
+
+[[**reference**]](https://pytorch.org/)
+
+### other programs
+
+```
+pip install scipy
+pip install sacred
+pip install matplotlib
+pip install opencv-python
+pip install pillow
+pip install numpy
+```
+
+### Useful command
+
+
+```
+nvidia-sim -l 1
+```
+Visualize gpu situation
+
+
 
 ### cuda and cudnn
+
+Install CUDA 9.0
 
 https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138
 
@@ -34,25 +66,4 @@ https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a
 
 https://www.tensorflow.org/install/install_linux#InstallingAnaconda
 
-### pytorch install
-
-https://pytorch.org/
-
-### other programs
-
-pip install scipy
-
-pip install sacred
-
-pip install matplotlib
-
-pip install opencv-python
-
-pip install pillow
-
-pip install numpy
-
-### Useful command
-
-- nvidia-sim -l 1
 
