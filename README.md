@@ -6,7 +6,7 @@
 - [Network connection](#network-connection)
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
-- [Language setting (Korean only)](#language-setting-(Korean-only))
+- [Language setting (Korean only)](#language-setting)
 - [Adaconda](#adaconda)
 - [Pytorch](#pytorch)
 - [Other programs](#other-programs)
@@ -70,7 +70,8 @@ sudo nvidia-settings
 
 ---
 
-# Language setting (Korean only)
+# Language setting 
+## **(Korean only)**
 
 - Settings
 - Region & Language
