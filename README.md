@@ -33,11 +33,13 @@ sudo nvidia-settings
 - Input sources
   - Delete English
   - Add Korean(Hangul)
+  
+**(Optional)**
+- Input sources
   - Click Korean(Hangul)
-- Option
+- Option button
 - Hangul toggle key
-    Add Hangul
-
+  - Add Hangul
 
 [[**reference**]](http://snowdeer.github.io/linux/2018/07/11/ubuntu-18p04-install-korean-keyboard/)
 
