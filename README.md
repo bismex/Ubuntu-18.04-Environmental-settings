@@ -23,8 +23,8 @@
 - [Pycharm](#pycharm)
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
-
----
+- [Teamviewer](#teamviewer)
+- [Kakao talk](#kakao-talk)
 
 # Ubuntu installation 
 ## Version : 18.04
@@ -274,7 +274,7 @@ nvidia-smi -l 1
 
 ---
 
-# Kakao
+# Kakao talk
 
 
 - Install wine
