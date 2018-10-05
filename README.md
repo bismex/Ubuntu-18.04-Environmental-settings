@@ -148,7 +148,9 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - Cuda samples? [yes]
 - Confirm sample location
 
-`nvcc --version`
+```
+nvcc --version
+```
 
 ---
 
@@ -170,7 +172,9 @@ sudo chmod a+r /usr/local/cuda-9.0/include/cudnn.h /usr/local/cuda/lib64/libcudn
 ```
 - Install libcupti
 
-`sudo apt-get install libcupti-dev`
+```
+sudo apt-get install libcupti-dev
+```
 
 - Do the CUDA post-install actions
 
@@ -235,13 +239,9 @@ pycharm-community 2017.3.3 from 'jetbrains' installed
 ```
 
 - Start
-`pycharm-community`
-
-
-
-
-
-
+```
+pycharm-community
+```
 
 # Other programs
 
@@ -263,8 +263,51 @@ conda deactivate
 # Useful command
 
 - Visualize gpu situation (auto update)
-`nvidia-smi -l 1
 ```
+nvidia-smi -l 1
+```
+
+---
+
+# Teamviewer
+## [[**reference**]](https://www.teamviewer.com/ko/download/linux/?pid=google.tv.kr_sn_desk_brand_teamviewerlinux_ex_repeat.s.kr&gclid=Cj0KCQjwl9zdBRDgARIsAL5Nyn1AoUmfQIIfCaSWNBGA2IFXQRqn_SCEocnXth97RuNmHQr56DWnsVEaAkEZEALw_wcB)
+
+---
+
+# Kakao
+
+
+- Install wine
+```
+sudo apt install wine-stable
+WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
+wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod 777 winetricks
+sudo apt-get install cabextract
+./winetricks
+
+```
+  - Select the default wineprefix (check)
+  - Install a Windows DLL or component (check)
+  - gdiplus, msxml6, riched30, wmp9 (check)
+
+```
+wget http://app.pc.kakao.com/talk/win32/xp/KakaoTalk_Setup.exe
+wine KakaoTalk_Setup.exe
+```
+
+
+```
+cd .local/share/applications/wine/Programs/KakaoTalk/
+sudo vim KakaoTalk.desktop
+```
+- add `LANG="ko_KR.UTF-8"`
+```
+cp KakaoTalk.desktop /usr/share/applications/
+```
+
+
+
 
 
 
