@@ -9,6 +9,7 @@
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting)
+- [Adaconda](#adaconda)
 
 **Tensorflow**
 - [CUDA](#cuda)
@@ -16,7 +17,6 @@
 - [Tensorflow](#tensorflow)
   
 **Pytorch**
-- [Adaconda](#adaconda)
 - [Pytorch](#pytorch)
   
 **ETC**
@@ -98,7 +98,27 @@ sudo nvidia-settings
 - Hangul toggle key
   - Add Hangul
 
+---
 
+# Adaconda
+## Version : Python 3.7 version (64bit) 
+## [[**reference**]](https://www.anaconda.com/download/#linux)
+
+```
+cd
+cd Downloads/
+bash Anaconda3-5.3.0-Linux-x86_64.sh
+```
+- License agreement
+- Confirm install location
+- /root/.bachrc? [yes]
+- VSCode? [No]
+
+(after reboot)
+
+```
+conda --version
+```
 
 ---
 
@@ -126,6 +146,8 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - symbolic link? [yes]
 - Cuda samples? [yes]
 - Confirm sample location
+
+`nvcc --version`
 
 ---
 
@@ -163,79 +185,65 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 # Tensorflow 
 ## [[**reference**]](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
 
-
-- Check if your Python environment is already configured:
+- Create virtual environment for Tensorflow by Anaconda
 ```
-pip install --upgrade pip
-sudo apt install virtualenv
-python3 --version
-pip3 --version
-virtualenv --version
-```
-- Install install Python, the pip package manager, and Virtualenv:
-```
-sudo apt update
-sudo apt install python3-dev python3-pip
-sudo pip3 install -U virtualenv
-```
-- Create a vitual environment
-
-
-
----
-
-# Adaconda
-## Version : Python 3.7 version (64bit) 
-## [[**reference**]](https://www.anaconda.com/download/#linux)
-
-```
-cd
-cd Downloads/
-bash Anaconda3-5.3.0-Linux-x86_64.sh
-```
-- License agreement
-- Confirm install location
-- /root/.bachrc? [yes]
-- VSCode? [No]
-
-(after reboot)
-
-```
-conda --version
-conda create -n new_name python=3.6
-conda activate pytorch36
+conda create -n tensorflow36 python=3.6
+conda activate tensorflow36
 conda deactivate
 ```
 
+```
+conda activate tensorflow36
+pip install --upgrade tensorflow-gpu
+python -c "import tensorflow as tf; print(tf.__version__)"
+conda deactivate
+```
 ---
+
 
 # Pytorch 
 ## [[**reference**]](https://pytorch.org/)
 
+
+- Create virtual environment for Pytorch by Anaconda
+
+```
+conda create -n pytorch36 python=3.6
+conda activate pytorch36
+conda deactivate
+```
+
+```
+conda activate pytorch36
+conda install pytorch-cpu torchvision-cpu -c pytorch
+conda deactivate
+```
 
 
 ---
 
 # Other programs
 
+
+- In the vitual environment (anaconda)
 ```
+conda activate pytorch36
 pip install scipy
 pip install sacred
 pip install matplotlib
 pip install opencv-python
 pip install pillow
 pip install numpy
+conda deactivate
 ```
 
 ---
 
 # Useful command
 
-
+- Visualize gpu situation (auto update)
+`nvidia-smi -l 1
 ```
-nvidia-sim -l 1
-```
-Visualize gpu situation
 
 
 
