@@ -2,7 +2,7 @@
 
 
 ## Table of Contents
-
+https://hiseon.me/2018/07/02/ubuntu-kakaotalk/
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
 - [Network connection](#network-connection)
@@ -275,7 +275,8 @@ nvidia-smi -l 1
 ---
 
 # Kakao talk
-
+## [[**reference1**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
+## [[**reference2**]](https://www.hahwul.com/2018/08/install-kakaotalk-on-ubuntu-18.04.html)
 
 - Install wine
 ```
