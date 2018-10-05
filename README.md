@@ -20,6 +20,7 @@
 - [Pytorch](#pytorch)
   
 **ETC**
+- [Pycharm](#pycharm)
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
 
@@ -222,6 +223,25 @@ conda deactivate
 
 
 ---
+
+# Pycharm
+## [[**reference**]](https://linuxconfig.org/how-to-install-pycharm-on-ubuntu-18-04-bionic-beaver-linux)
+
+- Install pycharm using Snaps
+
+```
+sudo snap install pycharm-community --classic
+pycharm-community 2017.3.3 from 'jetbrains' installed
+```
+
+- Start
+`pycharm-community`
+
+
+
+
+
+
 
 # Other programs
 
