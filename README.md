@@ -192,6 +192,7 @@ conda activate tensorflow36
 conda deactivate
 ```
 
+- Install tensorflow
 ```
 conda activate tensorflow36
 pip install --upgrade tensorflow-gpu
@@ -206,13 +207,13 @@ conda deactivate
 
 
 - Create virtual environment for Pytorch by Anaconda
-
 ```
 conda create -n pytorch36 python=3.6
 conda activate pytorch36
 conda deactivate
 ```
 
+- Install pytorch
 ```
 conda activate pytorch36
 conda install pytorch-cpu torchvision-cpu -c pytorch
