@@ -164,6 +164,23 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 ## [[**reference**]](https://www.tensorflow.org/install/install_linux#InstallingAnaconda)
 
 
+- Check if your Python environment is already configured:
+```
+pip install --upgrade pip
+sudo apt install virtualenv
+python3 --version
+pip3 --version
+virtualenv --version
+```
+- Install install Python, the pip package manager, and Virtualenv:
+```
+sudo apt update
+sudo apt install python3-dev python3-pip
+sudo pip3 install -U virtualenv
+```
+- Create a vitual environment
+
+
 
 ---
 
