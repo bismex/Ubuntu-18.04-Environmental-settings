@@ -2,7 +2,7 @@
 
 
 ## Table of Contents
-https://hiseon.me/2018/07/02/ubuntu-kakaotalk/
+
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
 - [Network connection](#network-connection)
