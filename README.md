@@ -278,6 +278,8 @@ nvidia-smi -l 1
 ## [[**reference1**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
 ## [[**reference2**]](https://www.hahwul.com/2018/08/install-kakaotalk-on-ubuntu-18.04.html)
 
+(not working..)
+
 - Install wine
 ```
 sudo apt install wine-stable
