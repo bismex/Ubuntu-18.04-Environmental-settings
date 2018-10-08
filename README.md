@@ -247,6 +247,13 @@ pycharm-community
   - Settings
   - Project interpreter
   - Select the virtual environment where you installed pytorch
+- Change pycharm keymap
+  - File
+  - Settings
+  - Keymap
+    - Run : F5
+    
+  
   
   
 
