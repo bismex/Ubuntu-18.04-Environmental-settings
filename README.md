@@ -241,6 +241,14 @@ pycharm-community 2017.3.3 from 'jetbrains' installed
 ```
 pycharm-community
 ```
+- Make new project
+- Environmental settings
+  - File
+  - Settings
+  - Project interpreter
+  - Select the virtual environment where you installed pytorch
+  
+  
 
 # Other programs
 
