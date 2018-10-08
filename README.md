@@ -253,6 +253,9 @@ pycharm-community
   - Settings
   - Keymap
     - Run context configuration : F5
+    - Comment with line comment : ctrl+r
+    - Find : ctrl+f
+    - Replace : ctrl+shift+f
     
   
 ---
