@@ -220,7 +220,7 @@ conda deactivate
 - Install pytorch
 ```
 conda activate pytorch36
-conda install pytorch-cpu torchvision-cpu -c pytorch
+conda install pytorch torchvision -c pytorch
 conda deactivate
 ```
 
