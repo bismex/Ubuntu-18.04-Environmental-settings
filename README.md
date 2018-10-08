@@ -24,7 +24,6 @@
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
 - [Teamviewer](#teamviewer)
-- [Kakao talk](#kakao-talk)
 
 # Ubuntu installation 
 ## Version : 18.04
@@ -271,46 +270,6 @@ nvidia-smi -l 1
 
 # Teamviewer
 ## [[**reference**]](https://www.teamviewer.com/ko/download/linux/?pid=google.tv.kr_sn_desk_brand_teamviewerlinux_ex_repeat.s.kr&gclid=Cj0KCQjwl9zdBRDgARIsAL5Nyn1AoUmfQIIfCaSWNBGA2IFXQRqn_SCEocnXth97RuNmHQr56DWnsVEaAkEZEALw_wcB)
-
----
-
-# Kakao talk
-## [[**reference1**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
-## [[**reference2**]](https://www.hahwul.com/2018/08/install-kakaotalk-on-ubuntu-18.04.html)
-
-(not working..)
-
-- Install wine
-```
-sudo apt install wine-stable
-WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
-wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-chmod 777 winetricks
-sudo apt-get install cabextract
-./winetricks
-
-```
-  - Select the default wineprefix (check)
-  - Install a Windows DLL or component (check)
-  - gdiplus, msxml6, riched30, wmp9 (check)
-
-```
-wget http://app.pc.kakao.com/talk/win32/xp/KakaoTalk_Setup.exe
-wine KakaoTalk_Setup.exe
-```
-
-
-```
-cd .local/share/applications/wine/Programs/KakaoTalk/
-sudo vim KakaoTalk.desktop
-```
-- add `LANG="ko_KR.UTF-8"`
-```
-cp KakaoTalk.desktop /usr/share/applications/
-```
-
-
-
 
 
 
