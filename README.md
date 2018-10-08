@@ -252,7 +252,7 @@ pycharm-community
   - File
   - Settings
   - Keymap
-    - Run : F5
+    - Run context configuration : F5
     
   
 ---
