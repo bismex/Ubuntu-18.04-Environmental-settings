@@ -254,7 +254,7 @@ pycharm-community
   - Keymap
 - Run/Debug configurations
   - Python interpreter (python directory in the virtual environment)
-  - Environment variables
+  - Environment variables (optional.. for TensorFlow)
     - Add (Name : LD_LIBRARY_PATH / Value : /usr/local/cuda-9.0/lib64)
   - Working directory
     - /home/user_name/PycharmpProjects/your_project/
