@@ -252,10 +252,12 @@ pycharm-community
   - File
   - Settings
   - Keymap
-    - Run context configuration : F5
-    - Comment with line comment : ctrl+r
-    - Find : ctrl+f
-    - Replace : ctrl+shift+f
+- Run/Debug configurations
+  - Python interpreter (python directory in the virtual environment)
+  - Environment variables
+    - Add (Name : LD_LIBRARY_PATH / Value : /usr/local/cuda-9.0/lib64)
+  - Working directory
+    - /home/user_name/PycharmpProjects/your_project/
     
   
 ---
