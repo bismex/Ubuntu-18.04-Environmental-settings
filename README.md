@@ -181,10 +181,13 @@ sudo apt-get install libcupti-dev
 - Do the CUDA post-install actions
 
 ```
+gedit ~/.bashrc
+```
+- Write the below commands
+```
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
-
 - Restart !
 
 ---
@@ -203,9 +206,6 @@ conda deactivate
 ```
 conda activate tensorflow36
 pip install --upgrade tensorflow-gpu
-conda deactivate
-Sudo reboot
-
 python -c "import tensorflow as tf; print(tf.__version__)"
 ```
 ---
