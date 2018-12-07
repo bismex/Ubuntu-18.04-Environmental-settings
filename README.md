@@ -144,8 +144,8 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - Unsupported configuration? [yes]
 - Graphic driver? [no]
 - Cuda toolkit? [yes]
-- run with 'sudo'? [yes]
 - Confirm toolkit location
+- run with 'sudo'? [yes]
 - symbolic link? [yes]
 - Cuda samples? [yes]
 - Confirm sample location
