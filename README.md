@@ -203,8 +203,10 @@ conda deactivate
 ```
 conda activate tensorflow36
 pip install --upgrade tensorflow-gpu
-python -c "import tensorflow as tf; print(tf.__version__)"
 conda deactivate
+Sudo reboot
+
+python -c "import tensorflow as tf; print(tf.__version__)"
 ```
 ---
 
@@ -302,6 +304,93 @@ nvidia-smi -l 1
 # KakaoTalk
 
 ## [[**reference**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
+
+
+- Install Wine and environmental settings
+
+```
+sudo apt install wine-stable cabextract
+WINEARCH=win32 WINEPREFIX=~/.wine wine wineboot
+wget  https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+chmod +x winetricks
+./winetricks --optout
+```
+
+- Select the default winprefix
+- Install a Windows DLL or component
+- Select (gdiplus, riched30, wmp9, msxml6)
+
+- Copy Gulim font (window to ubuntu)
+- copy C:/Windows/Fonts/gulim.ttf (or ttc) -> ~/.wine/drive_c/windows/Fonts
+(using cp -i or something else)
+
+```
+chmod 644 ~/.wine/drive_c/windows/Fonts/gulim.ttf
+gedit ~/.wine/system.reg
+```
+
+Change from
+```
+"MS Shell Dlg"="Tahoma"
+"MS Shell Dlg 2"="Tahoma"
+```
+to
+```
+"MS Shell Dlg"="Gulim"
+"MS Shell Dlg 2"="Gulim"
+```
+
+- Install kakaoTalk
+```
+winecfg
+```
+- Confirm the version of window
+- Download the file (version check) [[Download]](https://www.kakaocorp.com/service/KakaoTalk)
+- Install it
+```
+wine-stable KakaoTalk_Setup.exe
+```
+
+- Change language setting
+```
+gedit ~/.local/share/applications/wine/Programs/KakaoTalk/KakaoTalk.desktop
+```
+Change from
+```
+Exec=env WINEPREFIX="/home/ubuntu/.wine" wine-stable C:\\\\windows\\\\command\\\\start.exe /Unix /home/ubuntu/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/KakaoTalk/KakaoTalk.lnk
+```
+to
+```
+Exec=env WINEPREFIX="/home/ubuntu/.wine" LANG="ko_KR.UTF-8" wine-stable C:\\\\windows\\\\command\\\\start.exe /Unix /home/ubuntu/.wine/dosdevices/c:/ProgramData/Microsoft/Windows/Start\\ Menu/Programs/KakaoTalk/KakaoTalk.lnk
+```
+- Notably, LANG="ko_KR.UTF-8" is Only added
+
+- Solving the problem of broken font
+
+``` 
+cd "/home/ubuntu/.wine/dosdevices/c:/Program Files/Kakao/KakaoTalk"
+LANG="ko_KR.UTF-8" wine-stable KakaoTalk.exe
+```
+
+- Setting system tray
+
+```
+sudo apt install gnome-shell-extension-top-icons-plus
+```
+- Extensions
+  - Topicons plus (check!)
+ 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
