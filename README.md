@@ -300,7 +300,9 @@ nvidia-smi -l 1
 
 
 
+# KakaoTalk
 
+## [[**reference**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
 
 
 
