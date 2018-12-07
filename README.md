@@ -237,10 +237,9 @@ conda deactivate
 
 ```
 sudo snap install pycharm-community --classic
-pycharm-community 2017.3.3 from 'jetbrains' installed
 ```
+- pop up the message "pycharm-community 2017.3.3 from 'jetbrains' installed"
 
-- Start
 ```
 pycharm-community
 ```
