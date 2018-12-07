@@ -92,12 +92,12 @@ sudo nvidia-settings
   - Add Korean(Hangul)
   - Delete English
   
-**(Optional)**
+**(Optional - shortcut setting)**
 - Input sources
-  - Click Korean(Hangul)
+- Click Korean(Hangul)
 - Option button
 - Hangul toggle key
-  - Add Hangul
+  - Add HAN/ENG key (Alt-R)
 
 ---
 
