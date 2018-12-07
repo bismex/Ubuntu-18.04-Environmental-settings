@@ -89,8 +89,8 @@ sudo nvidia-settings
 - Settings
 - Region & Language
 - Input sources
-  - Delete English
   - Add Korean(Hangul)
+  - Delete English
   
 **(Optional)**
 - Input sources
@@ -104,6 +104,8 @@ sudo nvidia-settings
 # Adaconda
 ## Version : Python 3.7 version (64bit) 
 ## [[**reference**]](https://www.anaconda.com/download/#linux)
+
+- Download anaconda (click the reference)
 
 ```
 cd
