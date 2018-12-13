@@ -277,6 +277,9 @@ pycharm-community
     - run : F5 
     - debug : F6
     - resume program : F7
+    - close : ctrl+W
+    - 
+    
 - Run/Debug configurations
   - Python interpreter (python directory in the virtual environment)
   - Environment variables (optional.. for TensorFlow)
