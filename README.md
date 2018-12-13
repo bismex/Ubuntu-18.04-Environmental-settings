@@ -273,6 +273,10 @@ pycharm-community
   - File
   - Settings
   - Keymap
+    - comment : ctrl+R
+    - run : F5 
+    - debug : F6
+    - resume program : F7
 - Run/Debug configurations
   - Python interpreter (python directory in the virtual environment)
   - Environment variables (optional.. for TensorFlow)
@@ -320,7 +324,6 @@ nvidia-smi -l 1
 
 
 # KakaoTalk
-
 ## [[**reference**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
 
 
@@ -398,10 +401,6 @@ sudo apt install gnome-shell-extension-top-icons-plus
 - Extensions
   - Topicons plus (check!)
  
-
-
-
-
 
 
 
