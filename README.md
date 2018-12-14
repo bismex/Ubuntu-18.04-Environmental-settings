@@ -25,6 +25,8 @@
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
 - [Teamviewer](#teamviewer)
+- [KakaoTalk](#KakaoTalk)
+- [Wheel speed](#wheel-speed)
 
 # Ubuntu installation 
 ## Version : 18.04
@@ -405,6 +407,31 @@ sudo apt install gnome-shell-extension-top-icons-plus
   - Topicons plus (check!)
  
 
+
+# Wheel speed
+## [[**reference**]](https://minjejeon.github.io/learningstock/2016/07/08/change-mouse-wheel-speed-using-imwheel.html)
+
+```
+sudo apt-get install imwheel
+imwheel
+sudo gedit /etc/X11/imwheel/startup.conf
+```
+- Change ‘IMWHEEL_START=0’ to ‘IMWHEEL_START=1’
+```
+gedit ~/.imwheelrc
+```
+- Copy all the contents in [[ref]](https://www.apt-browse.org/browse/debian/wheezy/main/i386/imwheel/1.0.0pre12-9/file/etc/X11/imwheel/imwheelrc)
+
+- Add below commands (the number 3 means wheel speed)
+```
+".*"
+None,      Up,   Button4, 3 
+None,      Down, Button5, 3
+```
+- End
+```
+imwheel -k
+```
 
 
 
