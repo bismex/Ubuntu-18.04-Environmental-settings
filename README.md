@@ -91,15 +91,15 @@ sudo nvidia-settings
 - Settings
 - Region & Language
 - Input sources
-  - Add Korean(Hangul)
+  - Add Korean(Hangul) <- If 'Korean(Hangul)' (not 'Korean') does not exist, click 'Manage Installed Languages' and install it
   - Delete English
   
 **(Optional - shortcut setting)**
 - Input sources
-- Click Korean(Hangul)
-- Option button
+- Click Korean(Hangul) 
+- Option button (It exists only in 'Korean(Hangul)' not ' Korean')
 - Hangul toggle key
-  - Add HAN/ENG key (Alt-R)
+  - Add HAN/ENG key (Alt-R or Hangul)
 
 ---
 
