@@ -283,7 +283,7 @@ pycharm-community
     - debug : F6
     - resume program : F7
     - close : ctrl+W
-    - 
+  
     
 - Run/Debug configurations
   - Python interpreter (python directory in the virtual environment)
@@ -314,17 +314,6 @@ pip install pillow
 pip install numpy
 conda deactivate
 ```
-
----
-
-# Useful command
-
-- Visualize gpu situation (auto update)
-```
-nvidia-smi -l 1
-```
-
----
 
 # Teamviewer
 ## [[**reference**]](https://www.teamviewer.com/ko/download/linux/?pid=google.tv.kr_sn_desk_brand_teamviewerlinux_ex_repeat.s.kr&gclid=Cj0KCQjwl9zdBRDgARIsAL5Nyn1AoUmfQIIfCaSWNBGA2IFXQRqn_SCEocnXth97RuNmHQr56DWnsVEaAkEZEALw_wcB)
@@ -438,11 +427,25 @@ imwheel -k
 
 # Useful command
 
-unzip : tar -xvzf "file name"
-remove folder : rm -rf "folder name"
-make folder : mkdir "folder name"
-copy folder : cp -r "folder a" "folder b"
-move folder : mv "folder a" "folder b"
+- unzip : tar -xvzf "file name"
+- remove folder : rm -rf "folder name"
+- make folder : mkdir "folder name"
+- copy folder : cp -r "folder a" "folder b"
+- move folder : mv "folder a" "folder b"
+- Visualize gpu situation (auto update)
+```
+nvidia-smi -l 1
+```
+
+
+
+- Change mount position
+```
+lsblk # check disk position
+sudo xdg-open /etc/fstab # change disk position
+```
+- Add /dev/sdc /mnt/hard1 ntfs-3g defaults 0 2 (??? not completed)
+
 
 
 
