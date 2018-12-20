@@ -28,6 +28,9 @@
 - [KakaoTalk](#KakaoTalk)
 - [Wheel speed](#wheel-speed)
 
+**[Useful command](#useful-command)**
+
+
 # Ubuntu installation 
 ## Version : 18.04
 ## [[**reference**]](http://vire.tistory.com/25?category=678504)
@@ -433,6 +436,11 @@ None,      Down, Button5, 3
 imwheel -k
 ```
 
+# Useful command
+
+unzip : tar -xvzf "file name"
+remove folder : rm -rf "folder name"
+make folder : mkdir "folder name"
 
 
 
