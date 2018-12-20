@@ -441,6 +441,8 @@ imwheel -k
 unzip : tar -xvzf "file name"
 remove folder : rm -rf "folder name"
 make folder : mkdir "folder name"
+copy folder : cp -r "folder a" "folder b"
+move folder : mv "folder a" "folder b"
 
 
 
