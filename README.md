@@ -427,6 +427,7 @@ imwheel -k
 
 # Useful command
 
+
 - unzip : tar -xvzf "file name"
 - remove folder : rm -rf "folder name"
 - make folder : mkdir "folder name"
@@ -436,24 +437,21 @@ imwheel -k
 ```
 nvidia-smi -l 1
 ```
-
-
-
 - Change mount position
 ```
 lsblk # check disk position
 sudo xdg-open /etc/fstab # change disk position
 ```
-- Add /dev/sdc /mnt/hard1 ntfs-3g defaults 0 2 (??? not completed)
+>> Add /dev/sdc /mnt/hard1 ntfs-3g defaults 0 2 (??? not completed)
 
 - **Caution!** Removing "Alt" function from "Han/Eng" key on the keyboard. [[reference]](http://hyoungx.tistory.com/38)
 ```
 xmodmap -e 'remove mod1 = Alt_R'
 xmodmap -e 'keycode 108 = Hangul'
 ```
-  - Option -> Region & Language -> Korean (Hangul) -> Option -> Shortkey (Alt+R -> Hangul)
+>> Option -> Region & Language -> Korean (Hangul) -> Option -> Shortkey (Alt+R -> Hangul)
 
-
+- Chrome auto scroll [[reference]](https://chrome.google.com/webstore/detail/autoscroll/occjjkgifpmdgodlplnacmkejpdionan)
 
 
 
