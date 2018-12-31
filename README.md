@@ -429,6 +429,7 @@ imwheel -k
 
 
 - unzip : tar -xvzf "file name"
+- unzip all 'zip' files : for file in `ls *.zip`; do unzip "${file}" -d "${file:0:-4}"; done
 - remove folder : rm -rf "folder name"
 - make folder : mkdir "folder name"
 - copy folder : cp -r "folder a" "folder b"
