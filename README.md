@@ -223,30 +223,30 @@ python -c "import tensorflow as tf; print(tf.__version__)"
 - Create virtual environment for Pytorch by Anaconda
 - Install pytorch (various versions)
 ```
-conda create -n py36_torch041 python=3.6
-source activate py36_torch041
+conda create -n seokeon_py36_torch041 python=3.6
+source activate seokeon_py36_torch041
 conda install pytorch=0.4.1 cuda90 -c pytorch
 source deactivate
 ```
 
 ```
-conda create -n py27_torch041 python=2.7
-source activate py27_torch041
+conda create -n seokeon_py27_torch041 python=2.7
+source activate seokeon_py27_torch041
 conda install pytorch=0.4.1 cuda90 -c pytorch
 source deactivate
 ```
 
 ```
-conda create -n py36_torch031 python=3.6
-source activate py36_torch031
+conda create -n seokeon_py36_torch031 python=3.6
+source activate seokeon_py36_torch031
 conda install pytorch=0.3.1 cuda90 -c pytorch
 source deactivate
 ```
 
 
 ```
-conda create -n py27_torch031 python=2.7
-source activate py27_torch031
+conda create -n seokeon_py27_torch031 python=2.7
+source activate seokeon_py27_torch031
 conda install pytorch=0.3.1 cuda90 -c pytorch
 source deactivate
 ```
