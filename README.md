@@ -464,7 +464,7 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Chrome auto scroll [[reference]](https://chrome.google.com/webstore/detail/autoscroll/occjjkgifpmdgodlplnacmkejpdionan)
 
-- Symbolic (soft) link : `ln -s target_path link_path'
+- Symbolic (soft) link : `ln -s target_path link_path
 
 
 
