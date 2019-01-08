@@ -323,6 +323,7 @@ conda deactivate
 # KakaoTalk
 ## [[**reference**]](https://hiseon.me/2018/07/02/ubuntu-kakaotalk/)
 
+- **Caution!** An error may occur
 
 - Install Wine and environmental settings
 
