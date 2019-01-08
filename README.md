@@ -215,6 +215,12 @@ python -c "import tensorflow as tf; print(tf.__version__)"
 ```
 ---
 
+- Download other versions
+```
+# example
+pip install tensorflow==1.4.0
+```
+
 
 # Pytorch 
 ## [[**reference**]](https://pytorch.org/)
