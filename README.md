@@ -466,6 +466,8 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Symbolic (soft) link : `ln -s target_path link_path`
 
+- Count the number of files in the path 'find /path/to -type f | wc -l'
+
 
 
 
