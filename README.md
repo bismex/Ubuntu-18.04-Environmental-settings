@@ -470,6 +470,7 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Count the number of files in the present path `find . -type f | wc -l`
 
+- Remove conda env `conda env remove -n ENV_NAME`
 
 
 
