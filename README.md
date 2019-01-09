@@ -207,7 +207,7 @@ conda activate tensorflow36
 conda deactivate
 ```
 
-- Install tensorflow
+- Install tensorflow (latest version)
 ```
 conda activate py36_tensorflow
 pip install --upgrade tensorflow-gpu
@@ -218,7 +218,7 @@ python -c "import tensorflow as tf; print(tf.__version__)"
 - Download other versions
 ```
 # example
-pip install tensorflow==1.4.0
+pip install tensorflow-gpu==1.4.0
 ```
 
 
