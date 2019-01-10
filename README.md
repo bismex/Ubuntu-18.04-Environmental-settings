@@ -159,6 +159,43 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 nvcc --version
 ```
 
+
+**(Optional - install multiple CUDA versions)**
+
+- When installing one version according to the above procedure and installing another one, the following error message may occur. (ex: Ubuntu 18.04 + CUDA8.0)
+
+```
+# Command lines
+===========
+= Summary =
+===========
+Driver: Not Selected
+Toolkit: Installation Failed
+Samples: Installation Failed
+
+Logfile is /tmp/cuda_install_13486.log
+Signal caught, cleaning up
+
+# Log file
+Uncompressing NVIDIA CUDA....................................................................................
+
+Can't locate InstallUtils.pm in @INC (you may need to install the InstallUtils module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.26.1 /usr/local/share/perl/5.26.1 /usr/lib/x86_64-linux-gnu/perl5/5.26 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.26 /usr/share/perl/5.26 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at ./install-linux.pl line 6.
+
+BEGIN failed--compilation aborted at ./install-linux.pl line 6.
+
+Verifying archive integrity... All good.
+
+Uncompressing NVIDIA CUDA Samples.......................................................................................
+
+Can't locate InstallUtils.pm in @INC (you may need to install the InstallUtils module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.26.1 /usr/local/share/perl/5.26.1 /usr/lib/x86_64-linux-gnu/perl5/5.26 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.26 /usr/share/perl/5.26 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at ./install-sdk-linux.pl line 6.
+
+BEGIN failed--compilation aborted at ./install-sdk-linux.pl line 6.
+'uninstall_cuda_8.0.pl' -> '/usr/local/cuda-8.0/bin/uninstall_cuda_8.0.pl'
+```
+- Type the following command and reinstall the CUDA.
+  - Unpack .run file `./cuda*.run --tar mxvf`
+  - Copy InstallUtils.pm file `cp InstallUtils.pm /usr/lib/x86_64-linux-gnu/perl-base
+  - `export $PERL5LIB`
 ---
 
 # CUDNN
