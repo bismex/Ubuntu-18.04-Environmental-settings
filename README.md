@@ -194,7 +194,7 @@ BEGIN failed--compilation aborted at ./install-sdk-linux.pl line 6.
 ```
 - Type the following command and reinstall the CUDA.
   - Unpack .run file `./cuda*.run --tar mxvf`
-  - Copy InstallUtils.pm file `cp InstallUtils.pm /usr/lib/x86_64-linux-gnu/perl-base
+  - Copy InstallUtils.pm file `cp InstallUtils.pm /usr/lib/x86_64-linux-gnu/perl-base`
   - `export $PERL5LIB`
 ---
 
