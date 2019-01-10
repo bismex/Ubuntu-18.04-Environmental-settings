@@ -308,7 +308,8 @@ source deactivate
 - Install pycharm using Snaps
 
 ```
-sudo snap install pycharm-community --classic
+sudo snap install pycharm-community --classic 
+# or sudo snap install pycharm-professional --classic
 ```
 - pop up the message "pycharm-community 2017.3.3 from 'jetbrains' installed"
 
