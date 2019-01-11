@@ -227,13 +227,18 @@ gedit ~/.bashrc
 ```
 - Write the below commands
 ```
-export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64:${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH="/usr/local/cuda-9.0/bin:$PATH"
+export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
 ```
 - Restart ! or `source ~/.bashrc`
 
 
+**(Optional - Other version)**
 - Other version [[**reference**]](https://developer.nvidia.com/rdp/cudnn-archive)
+
+
+**(Optional - CUDNN PATH)**
+` export LD_LIBRARY_PATH="/home/$pID/cudnn/$version/lib64:$LD_LIBRARY_PATH" `
 
 ---
 
@@ -514,5 +519,6 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Remove conda env `conda env remove -n ENV_NAME`
 
+- Personal PATH `export PPATH="/path/to"` in ~/.bashrc
 
 
