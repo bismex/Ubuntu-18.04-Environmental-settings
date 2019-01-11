@@ -238,6 +238,9 @@ export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
 
 
 **(Optional - CUDNN PATH)**
+- Download CUDNN and UNPACK
+- move "lib64 and include folders" to `/home/$pID/cudnn/$version`
+- Add the below commands
 ` export LD_LIBRARY_PATH="/home/$pID/cudnn/$version/lib64:$LD_LIBRARY_PATH" `
 
 ---
