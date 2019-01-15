@@ -9,7 +9,7 @@
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting)
-- [Adaconda](#adaconda)
+- [Anaconda](#anaconda)
 
 **Tensorflow**
 - [CUDA](#cuda)
@@ -106,7 +106,7 @@ sudo nvidia-settings
 
 ---
 
-# Adaconda
+# Anaconda
 ## Version : Python 3.7 version (64bit) 
 ## [[**reference**]](https://www.anaconda.com/download/#linux)
 
