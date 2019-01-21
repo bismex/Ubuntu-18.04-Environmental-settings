@@ -484,7 +484,7 @@ imwheel -k
 
 # Useful command
 
-
+- compress files : zip -r zipname.zip filename
 - unzip : tar -xvzf "file name"
 - unzip all 'zip' files : 
 ```
