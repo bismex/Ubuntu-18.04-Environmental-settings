@@ -251,8 +251,8 @@ export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"
 
 - Create virtual environment for Tensorflow by Anaconda
 ```
-conda create -n tensorflow36 python=3.6
-conda activate tensorflow36
+conda create -n py36_tensorflow python=3.6
+conda activate py36_tensorflow
 conda deactivate
 ```
 
@@ -306,6 +306,13 @@ conda install pytorch=0.3.1 cuda90 -c pytorch
 source deactivate
 ```
 
+- Install pytorch (latest version pytorch1.0)
+```
+conda create -n seokeon_pytorch10 python=3.6
+source activate seokeon_pytorch10
+conda install pytorch torchvision -c pytorch
+source deactivate
+```
 
 
 ---
