@@ -502,6 +502,10 @@ for file in `ls *.zip`; do unzip "${file}" -d "${file:0:-4}"; done
 - copy folder : cp -r "folder a" "folder b"
 - copy folder (w/o overwrite) : rsync -a -v --ignore-existing src dst 
 - move folder : mv "folder a" "folder b"
+- list subdirectories : 
+`tree -d -L 1`
+`find src -mindepth 2 -maxdepth 3 -type d > list.txt`
+
 - Visualize gpu situation (auto update)
 ```
 nvidia-smi -l 1
