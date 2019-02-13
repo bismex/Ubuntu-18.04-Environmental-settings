@@ -536,4 +536,6 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Personal PATH `export PPATH="/path/to"` in ~/.bashrc
 
+- Add 'new document' option when right clicking `touch ~/Templates/Empty\ Document`
+
 
