@@ -346,6 +346,7 @@ pycharm-community
     - debug : F6
     - resume program : F7
     - close : ctrl+W
+    - Quick Evaluate Expression : Shift+E
   
     
 - Run/Debug configurations
