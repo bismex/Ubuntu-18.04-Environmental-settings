@@ -306,12 +306,12 @@ conda install pytorch=0.3.1 cuda90 -c pytorch
 source deactivate
 ```
 
-- Install pytorch (latest version pytorch1.1) + cuda8.0
+- Install pytorch (latest version)
 ```
-conda create -n seokeon_pytorch10 python=3.6
-source activate seokeon_pytorch10
+conda install pytorch-cpu torchvision-cpu -c pytorch
 conda install pytorch torchvision cudatoolkit=8.0 -c pytorch
-source deactivate
+conda install pytorch torchvision cudatoolkit=9.0 -c pytorch
+conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 ```
 
 
