@@ -380,7 +380,6 @@ pip install opencv-python
 pip install pillow
 pip install numpy
 conda install -c pytorch torchvision
-conda install -c anaconda yaml
 conda install -c anaconda pyyaml
 conda deactivate
 ```
