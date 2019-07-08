@@ -376,6 +376,7 @@ pip install matplotlib
 pip install opencv-python
 pip install pillow
 pip install numpy
+conda install -c pytorch torchvision
 conda deactivate
 ```
 
