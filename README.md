@@ -196,6 +196,9 @@ BEGIN failed--compilation aborted at ./install-sdk-linux.pl line 6.
   - Unpack .run file `./cuda*.run --tar mxvf`
   - Copy InstallUtils.pm file `cp InstallUtils.pm /usr/lib/x86_64-linux-gnu/perl-base`
   - `export $PERL5LIB`
+  
+**[(optional - install CUDA 10.0 + CUDNN 7.5)](https://greedywyatt.tistory.com/106)**
+
 ---
 
 # CUDNN
