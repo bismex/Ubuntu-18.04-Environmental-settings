@@ -544,4 +544,9 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Add 'new document' option when right clicking `touch ~/Templates/Empty\ Document`
 
+- Change ":" to "," in filename `find . -name "*:*" -exec rename 's|:|,|g' {} \;`
+  - sudo apt install rename
+
+
+
 
