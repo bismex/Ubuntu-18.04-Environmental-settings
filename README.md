@@ -30,7 +30,6 @@
 
 **[Useful command](#useful-command)**
 
-
 # Ubuntu installation 
 ## Version : 18.04
 ## [[**reference**]](http://vire.tistory.com/25?category=678504)
@@ -50,7 +49,6 @@
     - And, I partitioned it into 'partition swap' and 'ext4'. [[**Link**]](https://askubuntu.com/questions/343268/how-to-use-manual-partitioning-during-installation)
   - Where are you : seoul
   - Who are you : write your information
-
 
 ---
 
