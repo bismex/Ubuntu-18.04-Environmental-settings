@@ -551,6 +551,9 @@ xmodmap -e 'keycode 108 = Hangul'
 - 우분투 APT repository 제거하기 [[ref](https://m.blog.naver.com/PostView.nhn?blogId=opusk&logNo=220986301109&proxyReferer=https%3A%2F%2Fwww.google.com%2F)]
   - sudo add-apt-repository --remove ppa:~~~~~ (지우길 원하는 프로그램 이름명)
 
+- 터미널 열었을 때 (base) 있는 경우
+  - conda config --show | grep auto_activate_base
+  - conda config --set auto_activate_base False
 
 
 
