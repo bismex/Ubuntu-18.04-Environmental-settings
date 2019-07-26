@@ -545,10 +545,8 @@ xmodmap -e 'keycode 108 = Hangul'
 - Change ":" to "," in filename `find . -name "*:*" -exec rename 's|:|,|g' {} \;`
   - sudo apt install rename
 
-- screenlets [ref](https://deviantcj.tistory.com/22)
-  - sudo apt-add-repository ppa:screenlets/ppa
-  - sudo apt-get update && sudo apt-get install screenlets
-  - http://www.gnome-look.org
+- GPU temperature
+  - nvidia-smi -q -d temperature -l 1
 
 
 
