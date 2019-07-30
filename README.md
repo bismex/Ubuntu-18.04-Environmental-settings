@@ -554,7 +554,8 @@ xmodmap -e 'keycode 108 = Hangul'
 - 터미널 열었을 때 (base) 있는 경우
   - conda config --show | grep auto_activate_base
   - conda config --set auto_activate_base False
-
+- 디스크 용량 체크
+  - df -h
 
 
 
