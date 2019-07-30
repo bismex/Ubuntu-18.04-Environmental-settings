@@ -530,7 +530,8 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Chrome auto scroll [[reference]](https://chrome.google.com/webstore/detail/autoscroll/occjjkgifpmdgodlplnacmkejpdionan)
 
-- Symbolic (soft) link : `ln -s target_path link_path`
+- Symbolic (soft) link : `ln -s target_path(old) link_path(new)`
+  - `ln -s ../../../DB/reid/old_DB ./` 하면 `./` 위치에 `old_DB` 라는 폴더 생성
 
 - Count the number of files in the certain path `find /path/to -type f | wc -l`
 
