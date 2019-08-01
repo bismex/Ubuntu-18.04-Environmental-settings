@@ -9,7 +9,7 @@
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting)
-- [Anaconda](#anaconda)
+- [Anaconda](#anaconda) 
 
 **Tensorflow**
 - [CUDA](#cuda)
