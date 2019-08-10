@@ -17,7 +17,7 @@
 - [Tensorflow](#tensorflow)
   
 **Pytorch**
-- [Pytorch](#pytorch)
+- [Pytorch](#pytorch) 
    
 **ETC**
 - [Pycharm](#pycharm)
