@@ -15,7 +15,7 @@
 - [CUDA](#cuda)
 - [CUDNN](#cudnn)
 - [Tensorflow](#tensorflow)
-  
+   
 **Pytorch**
 - [Pytorch](#pytorch) 
    
