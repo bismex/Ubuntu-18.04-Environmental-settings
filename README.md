@@ -559,5 +559,7 @@ xmodmap -e 'keycode 108 = Hangul'
 - 디스크 용량 체크
   - df -h
 
+- 빠른 삭제
+   - sudo rm -r -f /path/
 
 
