@@ -1,7 +1,7 @@
 # Ubuntu 18.04 Environmental settings
 
 
-## Table of Contents 
+## Table of Contents
 
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
