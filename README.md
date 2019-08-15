@@ -12,7 +12,7 @@
 - [Anaconda](#anaconda) 
 
 **Tensorflow**
-- [CUDA](#cuda)
+- [CUDA](#cuda) 
 - [CUDNN](#cudnn) 
 - [Tensorflow](#tensorflow)
    
