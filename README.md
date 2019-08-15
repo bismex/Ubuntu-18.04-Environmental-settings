@@ -562,4 +562,9 @@ xmodmap -e 'keycode 108 = Hangul'
 - 빠른 삭제
    - sudo rm -r -f /path/
 
+- Compression
+   - (install) sudo apt-get install p7zip-full
+   - (compress) 7z a /created_file_name/ /folder_name or */
+   - (check) 7z l /7z_file/
+   - (extract) 7z e /7z_file/ 
 
