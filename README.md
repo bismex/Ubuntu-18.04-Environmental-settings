@@ -8,7 +8,7 @@
 - [Network connection](#network-connection)
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
-- [Language setting](#language-setting)
+- [Language setting](#language-setting) 
 - [Anaconda](#anaconda) 
 
 **Tensorflow**
