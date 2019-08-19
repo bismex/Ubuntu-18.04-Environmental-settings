@@ -18,7 +18,7 @@
    
 **Pytorch**
 - [Pytorch](#pytorch) 
-   
+    
 **ETC**
 - [Pycharm](#pycharm)
 - [Pytorch tutorial](#pytorch-tutorial)
