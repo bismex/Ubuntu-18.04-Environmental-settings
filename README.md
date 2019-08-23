@@ -5,7 +5,7 @@
 
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
-- [Network connection](#network-connection)
+- [Network connection](#network-connection) 
 - [Software updater](#software-updater)
 - [Graphic card driver](#graphic-card-driver)
 - [Language setting](#language-setting) 
