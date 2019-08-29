@@ -1,7 +1,7 @@
 # Ubuntu 18.04 Environmental settings
  
  
-## Table of Contents
+## Table of Contents 
 
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
@@ -30,7 +30,7 @@
 
 **[Useful command](#useful-command)**
 
-# Ubuntu installation 
+# Ubuntu installation
 ## Version : 18.04
 ## [[**reference**]](http://vire.tistory.com/25?category=678504)
 
