@@ -2,7 +2,7 @@
    
  
 ## Table of Contents
-  
+   
 **Basic setting**
 - [Ubuntu installation](#ubuntu-installation)
 - [Network connection](#network-connection) 
