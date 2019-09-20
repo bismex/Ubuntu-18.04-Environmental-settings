@@ -567,4 +567,7 @@ xmodmap -e 'keycode 108 = Hangul'
    - (compress) 7z a /created_file_name/ /folder_name or */
    - (check) 7z l /7z_file/
    - (extract) 7z e /7z_file/ 
+   
+- Memory check
+   - watch -d free / watch -n 1 free
 
