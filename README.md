@@ -20,7 +20,7 @@
 - [Pytorch](#pytorch)  
     
 **ETC**
-- [Pycharm](#pycharm)
+- [Pycharm](#pycharm) 
 - [Pytorch tutorial](#pytorch-tutorial)
 - [Other programs](#other-programs)
 - [Useful command](#useful-command)
