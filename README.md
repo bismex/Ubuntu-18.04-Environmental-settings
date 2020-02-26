@@ -532,6 +532,7 @@ xmodmap -e 'keycode 108 = Hangul'
 
 - Symbolic (soft) link : `ln -s target_path(old) link_path(new)`
   - `ln -s ../../../DB/reid/old_DB ./` 하면 `./` 위치에 `old_DB` 라는 폴더 생성
+  - `ln -sf ../../../DB/reid/old_DB ./new_DB` 하면 `./` 위치에 `new_DB` 라는 폴더 생성
 
 - Count the number of files in the certain path `find /path/to -type f | wc -l`
 
