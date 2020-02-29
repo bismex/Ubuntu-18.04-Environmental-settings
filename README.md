@@ -348,6 +348,10 @@ pycharm-community
     - resume program : F7
     - close : ctrl+W
     - Quick Evaluate Expression : Shift+E
+    - step over : F10
+    - step into : F11
+    - step out : shift + F11
+    - Toggle line breakpoint : F12
   
     
 - Run/Debug configurations
