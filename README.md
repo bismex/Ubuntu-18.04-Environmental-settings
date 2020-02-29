@@ -347,7 +347,8 @@ pycharm-community
     - debug : F6
     - resume program : F7
     - close : ctrl+W
-    - Quick Evaluate Expression : Shift+E
+    - Quick Evaluate Expression : Shift+F8
+    - Evaluate Expression : F8
     - step over : F10
     - step into : F11
     - step out : shift + F11
