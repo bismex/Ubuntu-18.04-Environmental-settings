@@ -576,4 +576,11 @@ xmodmap -e 'keycode 108 = Hangul'
    
 - Memory check
    - watch -d free / watch -n 1 free
+   
+- 파일 수 세기
+   - find . -type f | wc -l
+   
+- Pycharm deployment
+   - deploy먼저
+   - interpreter
 
