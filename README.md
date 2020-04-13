@@ -584,3 +584,5 @@ xmodmap -e 'keycode 108 = Hangul'
    - deploy먼저
    - interpreter
 
+- hard가 read-only 인경우
+   - https://hidekuma.github.io/ec2/ubuntu/linux/remount-ebs/
