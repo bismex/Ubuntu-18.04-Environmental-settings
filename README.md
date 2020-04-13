@@ -584,5 +584,11 @@ xmodmap -e 'keycode 108 = Hangul'
    - deploy먼저
    - interpreter
 
-- hard가 read-only 인경우
+- hard가 read-only 인경우 (window caches 에 의해서)
+   - https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system
    - https://hidekuma.github.io/ec2/ubuntu/linux/remount-ebs/
+   - $ cat /proc/mounts 에서 해당 디스크 ro로 되어있는지 확인
+   - $ sudo umount /dev/sdXY 
+   - $ sudo ntfsfix /dev/sdXY (두번?)
+   - $ sudo mount -o rw /dev/sdXY
+   
