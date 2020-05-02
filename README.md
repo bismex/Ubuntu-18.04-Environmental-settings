@@ -592,3 +592,5 @@ xmodmap -e 'keycode 108 = Hangul'
    - $ sudo ntfsfix /dev/sdXY (두번?)
    - $ sudo mount -o rw /dev/sdXY
    
+- pip 이용한 설치중 Cannot uninstall '~~~' 에러발생
+   - sudo pip install pwntools 대신에 sudo pip install --ignore-installed pwntools
