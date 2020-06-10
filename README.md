@@ -594,3 +594,20 @@ xmodmap -e 'keycode 108 = Hangul'
    
 - pip 이용한 설치중 Cannot uninstall '~~~' 에러발생
    - sudo pip install pwntools 대신에 sudo pip install --ignore-installed pwntools
+   
+- ppt FHD 동영상 저장 방법 (https://m.blog.naver.com/PostView.nhn?blogId=radiobj5&logNo=220345624061&proxyReferer=https:%2F%2Fwww.google.com%2F)
+   - 동영상 녹음
+   - F11
+   - 삽입 -> 모듈
+   
+```
+Sub MkVideo()
+If ActivePresentation.CreateVideoStatus <> ppMediaTaskStatusInProgress Then ActivePresentation.CreateVideo FileName:=Environ("USERPROFILE") & "\Desktop\test.mp4", _
+UseTimingsAndNarrations:=True, _
+VertResolution:=1080, _
+FramesPerSecond:=25, _
+Quality:=100
+Else: MsgBox "There is another conversion to video in progress"
+End If
+End Sub
+```
