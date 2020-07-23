@@ -506,6 +506,10 @@ imwheel -k
 ```
 for file in `ls *.zip`; do unzip "${file}" -d "${file:0:-4}"; done
 ```
+- zip by 7z:
+   - sudo apt-get install p7zip-full
+   - 7z a data.7z data.txt (zip)
+   - 7z e data.7z (unzip)
 - remove folder : rm -rf "folder name"
 - make folder : mkdir "folder name"
 - copy folder : cp -r "folder a" "folder b"
