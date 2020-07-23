@@ -619,3 +619,10 @@ Sub MkVideo()
 
 ```
    - F5
+- server 관리
+   - ssh 명령어 short-cut관리: gedit ~/.ssh/config
+   - ssh 바로 접근: ssh username@ip_adress
+   - id 생성
+      - 서버 root계정으로 로그인
+      - sudo adduser id_name
+   
