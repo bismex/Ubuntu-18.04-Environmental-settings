@@ -514,6 +514,7 @@ for file in `ls *.rar`; do unrar e "${file}"; done
    - 7z a data.7z data.txt (zip)
    - 7z e data.7z (unzip, )
 - remove folder : rm -rf "folder name"
+- remove 해당 디렉토리 내의 특정파일 삭제: find . -type f -name "*.zip" -exec rm {} \;
 - make folder : mkdir "folder name"
 - copy folder : cp -r "folder a" "folder b"
 - copy folder (w/o overwrite) : rsync -a -v --ignore-existing src dst 
@@ -571,6 +572,8 @@ xmodmap -e 'keycode 108 = Hangul'
   
 - 디스크 용량 체크
   - df -h
+- 폴더 내의 용량 체크
+  - du -h
 
 - 빠른 삭제
    - sudo rm -r -f /path/
