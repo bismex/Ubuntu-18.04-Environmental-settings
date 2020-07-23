@@ -505,6 +505,9 @@ imwheel -k
 - unzip all 'zip' files : 
 ```
 for file in `ls *.zip`; do unzip "${file}" -d "${file:0:-4}"; done
+for file in `ls *.zip`; do unzip "${file}" -d "./"; done
+for file in `ls *.rar`; do unrar e "${file}"; done
+
 ```
 - zip by 7z:
    - sudo apt-get install p7zip-full
