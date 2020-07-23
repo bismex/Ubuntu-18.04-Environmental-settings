@@ -625,4 +625,19 @@ Sub MkVideo()
    - id 생성
       - 서버 root계정으로 로그인
       - sudo adduser id_name
+   - CUDA 설정
+      - vim ~/.bashrc
+         - Cuda path
+            - export PATH="/usr/local/cuda-10.0/bin:$PATH"
+            - export LD_LIBRARY_PATH="/usr/local/cuda-10.0/lib64:$LD_LIBRARY_PATH"
+         - Anaconda path
+            - export PATH="/home/ROOT_NAME/anaconda3/bin:$PATH"
+            - export LD_LIBRARY_PATH="/home/ROOT_NAME/anaconda3/lib64:$LD_LIBRARY_PATH"
+      - source ~/.bashrc
+   - error control
+      - anaconda 가상환경 설정시 permission error: sudo chmod -R 777 anaconda3
+      - slurm에서 sbatch 안먹을때 (sinfo 입력했을때 drain인경우)
+        - 돌아가는 job 있을때: scontrol update nodename=node10 state=resume
+        - 돌아가는 job 없을때: scontrol update nodename=node10 state=idle
+   
    
