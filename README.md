@@ -645,5 +645,9 @@ Sub MkVideo()
       - slurm에서 sbatch 안먹을때 (sinfo 입력했을때 drain인경우)
         - 돌아가는 job 있을때: scontrol update nodename=node10 state=resume
         - 돌아가는 job 없을때: scontrol update nodename=node10 state=idle
+        
+- conda activate 가 안되고 source activate만 되는 경우
+   - source ~/anaconda3/etc/profile.d/conda.sh 
+
    
    
