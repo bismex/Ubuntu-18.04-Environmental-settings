@@ -660,6 +660,44 @@ Sub MkVideo()
   - sudo apt-get install -y boot-repair
   - boot-repair
   - Click Recommended repair
-
+- gpt to mbr (https://www.linuxtopic.com/2017/02/convert-partition-table-gpt-to-mbr-in.html)
+  - install gdisk
+  - gdisk /dev/sda
+  - command: r
+  - Recovery/transformation command? g
+  - (MBR command: p)
+  - MBR command: w
+  - coverted 1 paritions. Finalize and exit? (Y/N): y
+  - (command: w)
+  - reboot
+- 4TB이상 하드를 사서 리눅스를 설치할꺼면? (http://blog.naver.com/PostView.nhn?blogId=5bpa&logNo=220460531819)
+- 하드디스크 처음 마운트 (https://seongkyun.github.io/others/2019/03/05/hdd_mnt/)
+   - sudo fdisk -l 에서 하드 확인
+   - 용량이 2TB 이하인 경우
+      - sudo fdisk /dev/sda
+      - command: n
+      - select: p
+      - Partition number: 1
+      - First sector: (enter)
+      - Last sector: (enter)
+      -> created a new partition ~~
+      - command: p
+      - command: w
+   - format
+      - sudo mkfs.ext4 /dev/sda1
+   - uuid 확인
+      - 해당 disk의 UUID 복사
+   - mount
+      - sudo mkdir /mnt/directory-to-mount
+      - sudo vim /etc/fstab
+        - UUID=~~~~~ /directory-to-mount ext4 defaults 0 0
+        - 맨 아랫줄에 입력
+      - sudo mount -a
+      - df -h (마운트 확인)
+   - symbolic link
+      - sudo ln -s /directory-to-mount /home/choi/
+      - cd ~/directory-to-mount
+      - sudh chmod 777 ~/directory-to-moung
+   
    
    
