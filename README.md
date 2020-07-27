@@ -512,7 +512,7 @@ for file in `ls *.rar`; do unrar e "${file}"; done
 - zip by 7z:
    - sudo apt-get install p7zip-full
    - 7z a data.7z data.txt (zip)
-   - 7z e data.7z (unzip, ) 
+   - 7z x data.7z (unzip, ) 
 - remove folder : rm -rf "folder name"
 - remove 해당 디렉토리 내의 특정파일 삭제: find . -type f -name "*.zip" -exec rm {} \;
 - make folder : mkdir "folder name"
