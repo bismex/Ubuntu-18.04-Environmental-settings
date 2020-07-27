@@ -590,6 +590,9 @@ xmodmap -e 'keycode 108 = Hangul'
 - 파일 수 세기
    - find . -type f | wc -l
    
+- 해당 조건 파일 옮기기
+   - find path_A -name '*.jpg' -exec mv -t path_B {} +
+   
 - Pycharm deployment
    - deploy먼저
    - interpreter
