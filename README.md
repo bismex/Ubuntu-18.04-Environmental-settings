@@ -592,6 +592,7 @@ xmodmap -e 'keycode 108 = Hangul'
    
 - 해당 조건 파일 옮기기
    - find path_A -name '*.jpg' -exec mv -t path_B {} +
+   - maxdepth 1 
    
 - Pycharm deployment
    - deploy먼저
