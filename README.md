@@ -697,7 +697,11 @@ Sub MkVideo()
    - symbolic link
       - sudo ln -s /directory-to-mount /home/choi/
       - cd ~/directory-to-mount
-      - sudh chmod 777 ~/directory-to-moung
+      - sudh chmod 777 ~/directory-to-mount
+- 다른 서버 폴더 접근
+   - 폴더 gui에서 
+   - connect to server
+      - sftp://ID@ip
    
    
    
