@@ -702,6 +702,9 @@ Sub MkVideo()
    - 폴더 gui에서 
    - connect to server
       - sftp://ID@ip
+- 가상환경이나 현재 python에 pip으로 설치된 패키지 목력정보 만들기
+   - pip freeze > requirement.txt (문서생성)
+   - pip install -r requirements.txt (pip install)
    
    
    
