@@ -651,7 +651,15 @@ Sub MkVideo()
         - 돌아가는 job 없을때: scontrol update nodename=node10 state=idle
         
 - conda activate 가 안되고 source activate만 되는 경우
-   - source ~/anaconda3/etc/profile.d/conda.sh 
+  - source ~/anaconda3/etc/profile.d/conda.sh 
+- bootloader가 켜지지 않고 grup gnu terminal 창만 나오는 경우ㅜ
+  - ubuntu booting USB로 부팅(try ubuntu without installing)
+  - 인터넷연결
+  - sudo add-apt-repository ppa:yannubuntu/boot-repair
+  - sudo apt-get update
+  - sudo apt-get install -y boot-repair
+  - boot-repair
+  - Click Recommended repair
 
    
    
