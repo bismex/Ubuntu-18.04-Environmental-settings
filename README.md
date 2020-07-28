@@ -527,12 +527,6 @@ for file in `ls *.rar`; do unrar e "${file}"; done
 ```
 nvidia-smi -l 1
 ```
-- Change mount position
-```
-lsblk # check disk position
-sudo xdg-open /etc/fstab # change disk position
-```
-> Add /dev/sdc /mnt/hard1 ntfs-3g defaults 0 2 (??? not completed)
 
 - **Caution!** Removing "Alt" function from "Han/Eng" key on the keyboard. [[reference]](http://hyoungx.tistory.com/38)
 ```
@@ -597,14 +591,6 @@ xmodmap -e 'keycode 108 = Hangul'
 - Pycharm deployment
    - deploy먼저
    - interpreter
-
-- hard가 read-only 인경우 (window caches 에 의해서)
-   - https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system
-   - https://hidekuma.github.io/ec2/ubuntu/linux/remount-ebs/
-   - $ cat /proc/mounts 에서 해당 디스크 ro로 되어있는지 확인
-   - $ sudo umount /dev/sdXY 
-   - $ sudo ntfsfix /dev/sdXY (두번?)
-   - $ sudo mount -o rw /dev/sdXY
    
 - pip 이용한 설치중 Cannot uninstall '~~~' 에러발생
    - sudo pip install pwntools 대신에 sudo pip install --ignore-installed pwntools
@@ -652,52 +638,73 @@ Sub MkVideo()
         
 - conda activate 가 안되고 source activate만 되는 경우
   - source ~/anaconda3/etc/profile.d/conda.sh 
-- bootloader가 켜지지 않고 grup gnu terminal 창만 나오는 경우ㅜ
-  - ubuntu booting USB로 부팅(try ubuntu without installing)
-  - 인터넷연결
-  - sudo add-apt-repository ppa:yannubuntu/boot-repair
-  - sudo apt-get update
-  - sudo apt-get install -y boot-repair
-  - boot-repair
-  - Click Recommended repair
-- gpt to mbr (https://www.linuxtopic.com/2017/02/convert-partition-table-gpt-to-mbr-in.html)
-  - install gdisk
-  - gdisk /dev/sda
-  - command: r
-  - Recovery/transformation command? g
-  - (MBR command: p)
-  - MBR command: w
-  - coverted 1 paritions. Finalize and exit? (Y/N): y
-  - (command: w)
-  - reboot
-- 4TB이상 하드를 사서 리눅스를 설치할꺼면? (http://blog.naver.com/PostView.nhn?blogId=5bpa&logNo=220460531819)
-- 하드디스크 처음 마운트 (https://seongkyun.github.io/others/2019/03/05/hdd_mnt/)
-   - sudo fdisk -l 에서 하드 확인
-   - 용량이 2TB 이하인 경우
-      - sudo fdisk /dev/sda
-      - command: n
-      - select: p
-      - Partition number: 1
-      - First sector: (enter)
-      - Last sector: (enter)
-      -> created a new partition ~~
-      - command: p
-      - command: w
-   - format
-      - sudo mkfs.ext4 /dev/sda1
-   - uuid 확인
-      - 해당 disk의 UUID 복사
-   - mount
-      - sudo mkdir /mnt/directory-to-mount
-      - sudo vim /etc/fstab
-        - UUID=~~~~~ /directory-to-mount ext4 defaults 0 0
-        - 맨 아랫줄에 입력
-      - sudo mount -a
-      - df -h (마운트 확인)
-   - symbolic link
-      - sudo ln -s /directory-to-mount /home/choi/
-      - cd ~/directory-to-mount
-      - sudh chmod 777 ~/directory-to-mount
+
+  
+- Mount 완련!!
+   - bootloader가 켜지지 않고 grup gnu terminal 창만 나오는 경우ㅜ
+     - ubuntu booting USB로 부팅(try ubuntu without installing)
+     - 인터넷연결
+     - sudo add-apt-repository ppa:yannubuntu/boot-repair
+     - sudo apt-get update
+     - sudo apt-get install -y boot-repair
+     - boot-repair
+     - Click Recommended repair
+   - gpt to mbr (https://www.linuxtopic.com/2017/02/convert-partition-table-gpt-to-mbr-in.html)
+     - install gdisk
+     - gdisk /dev/sda
+     - command: r
+     - Recovery/transformation command? g
+     - (MBR command: p)
+     - MBR command: w
+     - coverted 1 paritions. Finalize and exit? (Y/N): y
+     - (command: w)
+     - reboot
+   - 4TB이상 하드를 사서 리눅스를 설치할꺼면? (http://blog.naver.com/PostView.nhn?blogId=5bpa&logNo=220460531819)
+   - 하드디스크 처음 마운트 (https://seongkyun.github.io/others/2019/03/05/hdd_mnt/)
+      - sudo fdisk -l 에서 하드 확인
+      - 용량이 2TB 이하인 경우
+         - sudo fdisk /dev/sda
+         - command: n
+         - select: p
+         - Partition number: 1
+         - First sector: (enter)
+         - Last sector: (enter)
+         -> created a new partition ~~
+         - command: p
+         - command: w
+      - format
+         - sudo mkfs.ext4 /dev/sda1
+      - uuid 확인
+         - 해당 disk의 UUID 복사
+      - mount
+         - sudo mkdir /mnt/directory-to-mount
+         - sudo vim /etc/fstab
+           - UUID=~~~~~ /directory-to-mount ext4 defaults 0 0
+           - 맨 아랫줄에 입력
+         - sudo mount -a
+         - df -h (마운트 확인)
+      - symbolic link
+         - sudo ln -s /directory-to-mount /home/choi/
+         - cd ~/directory-to-mount
+         - sudh chmod 777 ~/directory-to-mount
+   - Change mount position
+      ```
+      lsblk # check disk position
+      sudo xdg-open /etc/fstab # change disk position
+      ```
+      > Add /dev/sdc /mnt/hard1 ntfs-3g defaults 0 2 (??? not completed)
+   - Unrecognized mount option "default"
+      - vim /etc/fstab
+      - 에서 default라고 적힌것 defaults로
+   - hard가 read-only 인경우 (window caches 에 의해서)
+      - https://askubuntu.com/questions/462381/cant-mount-ntfs-drive-the-disk-contains-an-unclean-file-system
+      - https://hidekuma.github.io/ec2/ubuntu/linux/remount-ebs/
+      - $ cat /proc/mounts 에서 해당 디스크 ro로 되어있는지 확인
+      - $ sudo umount /dev/sdXY 
+      - $ sudo ntfsfix /dev/sdXY (두번?)
+      - $ sudo mount -o rw /dev/sdXY
+      
+      
 - 다른 서버 폴더 접근
    - 폴더 gui에서 
    - connect to server
