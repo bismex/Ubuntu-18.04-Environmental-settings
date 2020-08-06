@@ -596,8 +596,8 @@ xmodmap -e 'keycode 108 = Hangul'
    - sudo pip install pwntools 대신에 sudo pip install --ignore-installed pwntools
    
 - ppt FHD 동영상 저장 방법 (https://m.blog.naver.com/PostView.nhn?blogId=radiobj5&logNo=220345624061&proxyReferer=https:%2F%2Fwww.google.com%2F)
-   - 동영상 녹음
-   - F11
+   - 동영상 녹음 후에
+   - Alt + F11
    - 삽입 -> 모듈
    
 ```
