@@ -713,5 +713,12 @@ Sub MkVideo()
    - pip freeze > requirement.txt (문서생성)
    - pip install -r requirements.txt (pip install)
    
+- Git 관련
+   - git clone ~~~
+   - 파일 수정
+   - git add --all
+   - git commit -m "Fix ~~ or Update ~~"
+   - git push origin master
+   
    
    
