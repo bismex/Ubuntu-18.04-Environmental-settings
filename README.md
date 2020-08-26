@@ -149,8 +149,8 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 - Cuda toolkit? [yes]
 - Confirm toolkit location
 - run with 'sudo'? [yes]
-- symbolic link? [yes]
-- Cuda samples? [yes]
+- symbolic link? [no]
+- Cuda samples? [no]
 - Confirm sample location
 
 ```
@@ -162,7 +162,7 @@ nvcc --version
 - Install CUDA 10.2 [[**Link**]](https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
    - wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
    - sudo sh cuda_10.2.89_440.33.01_linux.run
-   - Graphic driver? [no] (important)
+   - Graphic driver? [no] (important) / symbolic link ? [no] (directly connect individual version by bashrc)
 
 
 **(Optional - install multiple CUDA versions)**
@@ -642,7 +642,28 @@ Sub MkVideo()
       - slurm에서 sbatch 안먹을때 (sinfo 입력했을때 drain인경우)
         - 돌아가는 job 있을때: scontrol update nodename=node10 state=resume
         - 돌아가는 job 없을때: scontrol update nodename=node10 state=idle
-        
+   - 서버에서 다른 cuda version 쓰고 싶을 때 (10.2 기준)
+      - CUDA 파일 다운로드: wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
+      - CUDA 설치: sudo sh cuda_10.2.89_440.33.01_linux.run
+         - EULA? [accept]
+         - Unsupported configuration? [yes]
+         - Graphic driver? [no] (important) 
+         - Cuda toolkit? [yes]
+         - run with 'sudo'? [yes]
+         - symbolic link? [no] (directly connect individual version by bashrc)
+         - Cuda samples? [no]
+      - CUDNN 파일 다운로드
+      - CUDNN 설치
+      - CUDNN 이동
+         - move "lib64 and include folders" to `/home/choi/cudnn/$version`
+      - link
+         - `vim ~/.bashrc`
+            - `export PATH="/usr/local/cuda-10.2/bin:$PATH"`
+            - `export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"`
+            - `export LD_LIBRARY_PATH="/home/choi/cudnn/$version/lib64:$LD_LIBRARY_PATH" `
+         - `source ~/.bashrc`
+         
+
 - conda activate 가 안되고 source activate만 되는 경우
   - source ~/anaconda3/etc/profile.d/conda.sh 
 
