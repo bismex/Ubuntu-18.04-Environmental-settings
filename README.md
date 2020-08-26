@@ -157,6 +157,13 @@ sudo chmod +x cuda_9.0.176_384.81_linux.run
 nvcc --version
 ```
 
+## Version 10.2
+
+- Install CUDA 10.2 [[**Link**]](https://developer.nvidia.com/cuda-10.2-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=runfilelocal)
+   - wget http://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
+   - sudo sh cuda_10.2.89_440.33.01_linux.run
+   - Graphic driver? [no] (important)
+
 
 **(Optional - install multiple CUDA versions)**
 
