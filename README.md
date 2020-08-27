@@ -667,7 +667,7 @@ Sub MkVideo()
 - conda activate 가 안되고 source activate만 되는 경우
   - source ~/anaconda3/etc/profile.d/conda.sh 
 
-- nvidia graphic driver 다른 버전 쓰고 싶을 때
+- nvidia graphic driver 다른 버전 쓰고 싶을 때 (https://codechacha.com/ko/install-nvidia-driver-ubuntu/)
   - 자동 버전 설치
     - sudo add-apt-repository ppa:graphics-drivers/ppa
     - sudo apt update
@@ -675,6 +675,33 @@ Sub MkVideo()
     - sudo reboot
   - 기존 삭제(만약 기존 설치된 프로그램과 출동한다면): sudo apt --purge autoremove nvidia*
 
+- Automatic mixed precision 쓰는 법 (https://hoya012.github.io/blog/Image-Classification-with-Mixed-Precision-Training-PyTorch-Tutorial/)
+  - CUDA10.1 버전 이상만 pytorch1.6 지원
+  - CUDA10.1 버전 이상 설치 / CUDNN 설치 (필수인지는 확실하지 않음)
+  - conda create -n seokeon_torch16 python=3.6
+  - conda activate seokeon_torch16  
+  - conda install pytorch torchvision cudatoolkit=10.1 -c pytorch  (10.2도 가능)
+  - nvidia graphic driver 업그레이드
+  - 코드에서 변경해야 하는 부분
+    - AMP_flag = True
+    - if AMP_flag:
+      - self.scaler = torch.cuda.amp.GradScaler() [추가된부분]
+    - dataloader iteration 내부에서
+      - if AMP_flag:
+         - with torch.cuda.amp.autocast(): [추가된부분]
+            - outputs = self.model(inputs)
+            - loss = self.criterion(outputs, labels)
+            - self.optimizer.zero_grad()
+            - self.scaler.scale(loss).backward() [변경된부분]
+            - self.scaler.step(self.optimizer) [변경된부분]
+            - self.scaler.update() [변경된부분]
+      - else:
+         - outputs = self.model(inputs)
+         - loss = self.criterion(outputs, labels)
+         - self.optimizer.zero_grad()
+         - loss.backward()
+         - self.optimizer.step()
+  
   
 - Mount 완련!!
    - bootloader가 켜지지 않고 grup gnu terminal 창만 나오는 경우ㅜ
