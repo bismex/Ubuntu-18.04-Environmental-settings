@@ -667,6 +667,14 @@ Sub MkVideo()
 - conda activate 가 안되고 source activate만 되는 경우
   - source ~/anaconda3/etc/profile.d/conda.sh 
 
+- nvidia graphic driver 다른 버전 쓰고 싶을 때
+  - 자동 버전 설치
+    - sudo add-apt-repository ppa:graphics-drivers/ppa
+    - sudo apt update
+    - sudo ubuntu-drivers autoinstall
+    - sudo reboot
+  - 기존 삭제(만약 기존 설치된 프로그램과 출동한다면): sudo apt --purge autoremove nvidia*
+
   
 - Mount 완련!!
    - bootloader가 켜지지 않고 grup gnu terminal 창만 나오는 경우ㅜ
