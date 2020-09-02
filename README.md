@@ -662,6 +662,8 @@ Sub MkVideo()
             - `export LD_LIBRARY_PATH="/usr/local/cuda-9.0/lib64:$LD_LIBRARY_PATH"`
             - `export LD_LIBRARY_PATH="/home/choi/cudnn/$version/lib64:$LD_LIBRARY_PATH" `
          - `source ~/.bashrc`
+   - 남은 용량 확인
+      - du -sh *
          
 
 - conda activate 가 안되고 source activate만 되는 경우
