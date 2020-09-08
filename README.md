@@ -784,6 +784,8 @@ Sub MkVideo()
    - git add --all
    - git commit -m "Fix ~~ or Update ~~"
    - git push origin master
+   - pycharm 과 연동
+      https://lsjsj92.tistory.com/364
    
    
    
