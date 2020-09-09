@@ -779,13 +779,30 @@ Sub MkVideo()
    - pip install -r requirements.txt (pip install)
    
 - Git 관련
-   - git clone ~~~
-   - 파일 수정
-   - git add --all
-   - git commit -m "Fix ~~ or Update ~~"
-   - git push origin master
-   - pycharm 과 연동
-      https://lsjsj92.tistory.com/364
+   - 명령어로 연동
+      - git clone ~~~
+      - 파일 수정
+      - git add --all
+      - git commit -m "Fix ~~ or Update ~~"
+      - git push origin master
+   - pycharm 과 연동 [link](https://lsjsj92.tistory.com/364)
+      - Web에서 repository 생성
+      - VCS>Get from Version Control
+      - Github ID login
+      - Repository 연결해서 원하는 폴더에 다운로드
+      - 원하는 파일 옮겨닮기 (외부에서 옮기면 따로 pycharm에서 add해야하므로 pycharm의 프로젝트 창으로 파일 바로 옮겨줌)
+      - commit
+      - push
    
-   
+ - conda env 복사 붙여넣기 [link](https://3months.tistory.com/441)
+    - anaconda version이 다르면 에러날수도
+    - conda activate 이름
+    - conda env export > environment.yaml
+    - python --version (Python 3.6.6) 인 경우
+    - 복사 하고자 하는 서버에 같은 파이선 버전 생성
+    - conda create --name [이름] python=3.6
+    - conda env create --prefix <your_conda_env_path> -f environment.yml
+
+
+
    
