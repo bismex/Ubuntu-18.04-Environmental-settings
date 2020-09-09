@@ -799,9 +799,11 @@ Sub MkVideo()
     - conda activate 이름
     - conda env export > environment.yaml
     - python --version (Python 3.6.6) 인 경우
-    - 복사 하고자 하는 서버에 같은 파이선 버전 생성
-    - conda create --name [이름] python=3.6
-    - conda env create --prefix <your_conda_env_path> -f environment.yml
+    - conda create --name [이름] python=3.6 (environment.yml 에 있는 이름과 동일, 복사 하고자 하는 서버에 같은 파이선 버전 생성)
+    - conda activate [이름]
+    - conda env create environment.yml 
+    - conda 생성 안하고 바로할경우
+      - conda env create --prefix <your_conda_env_path> -f environment.yml (envs/이름) 까지 
 
 
 
