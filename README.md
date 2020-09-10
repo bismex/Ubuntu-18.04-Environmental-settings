@@ -521,7 +521,7 @@ for file in `ls *.rar`; do unrar e "${file}"; done
    - 7z a data.7z data.txt (zip)
    - 7z x data.7z (unzip, ) 
 - remove folder : rm -rf "folder name"
-- remove 해당 디렉토리 내의 특정파일 삭제: find . -type f -name "*.zip" -exec rm {} \;
+- remove 해당 디렉토리 내의 특정파일 삭제: find . -type f -name "*.zip" -exec rm {} \; [link](http://blog.naver.com/PostView.nhn?blogId=lumen23&logNo=221311027501&redirect=Dlog&widgetTypeCall=true&directAccess=false)
 - make folder : mkdir "folder name"
 - copy folder : cp -r "folder a" "folder b"
 - copy folder (w/o overwrite) : rsync -a -v --ignore-existing src dst 
