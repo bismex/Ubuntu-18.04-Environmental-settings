@@ -793,6 +793,28 @@ Sub MkVideo()
       - 원하는 파일 옮겨닮기 (외부에서 옮기면 따로 pycharm에서 add해야하므로 pycharm의 프로젝트 창으로 파일 바로 옮겨줌)
       - commit
       - push
+   - 다른 github repository에 pull request를 하는 방법
+      - Fork the repository
+      - 1) local 작업
+         - git clone repository
+         - cd repository
+         - Create a new branch
+            - git branch new-branch
+            - git checkout new-branch
+            - or
+            - git checkout -b new-branch
+            - If you want to switch back to master
+            - git checkout master
+         - Make change locally
+            - Modify an existing file or add a new file
+            - git add filename.md or git add -A
+            - git commit -m "Fixed documentation typos" or git config --global core.editor "nano" (장문을 쓰길 원하면, nano대신 vim가능)
+            - git status (생략가능, verify 단계)
+            - git push --set-upstream origin new-branch (forked repository가 변경되어 있을 것이다)
+      - 2) In repositoy
+         - 원하는 파일 수정
+      - 3) Pull request (1 or 2 수행 이후)
+         - Repository-> Pull request->New pull request
    
  - conda env 복사 붙여넣기 [link](https://3months.tistory.com/441)
     - anaconda version이 다르면 에러날수도
