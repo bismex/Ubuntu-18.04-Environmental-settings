@@ -595,9 +595,20 @@ xmodmap -e 'keycode 108 = Hangul'
    - find path_A -name '*.jpg' -exec mv -t path_B {} +
    - maxdepth 1 
    
-- Pycharm deployment
-   - deploy먼저
-   - interpreter
+- Pycharm deployment (다른 컴퓨터의 pycharm 에서 코드 돌리는 법)
+   - original code git commit (or copy your code to new com)
+   - git clone repo (or paste the code)
+   - Settings -> Build, Execution, Deployment -> new connection (+) 
+      - Connection: SFTP -> SSH Configuration (make new IP) -> Test connection
+      - Mappings: Local path (new com), Deployment path (server com) => same folder
+      - If failed at Test connection, in server com or apply VPN (university)
+         - sudo apt update -y
+         - sudo apt-get install openssh-server
+         - sudo service ssh start
+         - sudo service openssh-server start
+   - Project -> Python Interpreter -> add (+) -> SSH Interpreter -> Existing server configuration -> Interpreter (server -> anaconda -> env -> bin -> python) -> sudo -> Sync folder (setting remote path) -> check automatically upload
+   - Setting configuration 
+      
    
 - pip 이용한 설치중 Cannot uninstall '~~~' 에러발생
    - sudo pip install pwntools 대신에 sudo pip install --ignore-installed pwntools
