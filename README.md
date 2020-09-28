@@ -360,6 +360,7 @@ pycharm-community
     - step into : F11
     - step out : shift + F11
     - Toggle line breakpoint : F12
+    - Code->Folding->Collapse All: Ctrl+Alt+minus
   
     
 - Run/Debug configurations
