@@ -782,6 +782,19 @@ Sub MkVideo()
       - $ sudo ntfsfix /dev/sdXY (두번?)
       - $ sudo mount -o rw /dev/sdXY
       
+- 7zip 압축
+   - 7z a kernel.7z kernel/ -v50m
+   - 50mb 분할 압축
+   - kernel.7z.001, kernel.7z.002 파일 생성
+
+- 7zip 해제
+   - 7z x kernel.7z.001 -aoa
+
+
+
+출처: https://ysh0222.tistory.com/26 [Sangho Yoon]
+
+출처: https://ysh0222.tistory.com/26 [Sangho Yoon]
       
 - 다른 서버 폴더 접근
    - 폴더 gui에서 
